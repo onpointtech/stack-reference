@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "aquila",
+    "packageName": "com.onpoint",
+    "packageFolder": "com/onpoint",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "783fa836d968fdcc1eb652357d854da61d99828a"
+  }
+}
