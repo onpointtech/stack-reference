@@ -1,0 +1,50 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "address",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Address",
+            "fieldNameUnderscored": "address",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "contactName",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ContactName",
+            "fieldNameUnderscored": "contact_name",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "contactPhone",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ContactPhone",
+            "fieldNameUnderscored": "contact_phone",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150327212153",
+    "pagination": "pager",
+    "validation": true
+}

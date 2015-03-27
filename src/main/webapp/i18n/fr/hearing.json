@@ -1,0 +1,22 @@
+{
+    "aquilaApp": {
+        "hearing" : {
+            "home": {
+                "title": "Hearings",
+                "createLabel": "Créer un nouveau Hearing",
+                "createOrEditLabel": "Créer ou éditer un Hearing"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Hearing {{ id }} ?"
+            },
+            "detail": {
+                "title": "Hearing"
+            },
+            "hearingDate": "HearingDate",
+            "location": "Location",
+            "ClaimCase": "ClaimCase",
+            "hearingRep": "hearingRep"
+        }
+    }
+}
+

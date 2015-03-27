@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Hearing.
+    -->
+    <changeSet id="20150327212702" author="jhipster">
+        <createTable tableName="T_HEARING">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="hearing_date" type="timestamp">
+                <constraints nullable="false" />
+            </column>
+            <column name="location" type="varchar(255)"/>
+            <column name="claimcase_id" type="bigint"/>
+            <column name="hearingrep_id" type="bigint"/>
+        </createTable>
+        <dropDefaultValue tableName="T_HEARING" columnName="hearing_date" columnDataType="datetime"/>
+
+        
+        <addForeignKeyConstraint baseColumnNames="claimcase_id"
+                                 baseTableName="T_HEARING"
+                                 constraintName="fk_hearing_claimcase_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="T_CLAIMCASE"/>
+
+        <addForeignKeyConstraint baseColumnNames="hearingrep_id"
+                                 baseTableName="T_HEARING"
+                                 constraintName="fk_hearing_hearingrep_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="T_USER"/>
+
+    </changeSet>
+</databaseChangeLog>

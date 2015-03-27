@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="aquilaApp.hearing.detail.title">Hearing</span> {{hearing.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="aquilaApp.hearing.hearingDate">HearingDate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{hearing.hearingDate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="aquilaApp.hearing.location">Location</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{hearing.location}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="aquilaApp.hearing.ClaimCase">ClaimCase</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{hearing.ClaimCase.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="hearing"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

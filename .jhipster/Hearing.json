@@ -1,0 +1,55 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "ClaimCase",
+            "relationshipNameCapitalized": "ClaimCase",
+            "relationshipFieldName": "claimCase",
+            "otherEntityName": "claimCase",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "ClaimCase",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "hearingRep",
+            "relationshipNameCapitalized": "HearingRep",
+            "relationshipFieldName": "hearingRep",
+            "otherEntityName": "user",
+            "relationshipType": "one-to-one",
+            "otherEntityNameCapitalized": "User",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "hearingDate",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "HearingDate",
+            "fieldNameUnderscored": "hearing_date",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "location",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Location",
+            "fieldNameUnderscored": "location",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150327212702",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

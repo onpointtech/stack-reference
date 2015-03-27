@@ -1,0 +1,20 @@
+{
+    "aquilaApp": {
+        "claimCase" : {
+            "home": {
+                "title": "ClaimCases",
+                "createLabel": "Créer un nouveau ClaimCase",
+                "createOrEditLabel": "Créer ou éditer un ClaimCase"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ClaimCase {{ id }} ?"
+            },
+            "detail": {
+                "title": "ClaimCase"
+            },
+            "legacyCaseNumber": "LegacyCaseNumber",
+            "Employer": "Employer"
+        }
+    }
+}
+

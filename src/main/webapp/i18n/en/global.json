@@ -6,6 +6,9 @@
             "home": "Home",
             "entities": {
                 "main": "Entities",
+                "employer": "Employer",
+                "claimCase": "ClaimCase",
+                "hearing": "Hearing",
                 "additionalEntity": "JHipster will add addtional entities"
             },
             "account": {

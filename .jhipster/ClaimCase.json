@@ -1,0 +1,37 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "Employer",
+            "relationshipNameCapitalized": "Employer",
+            "relationshipFieldName": "employer",
+            "otherEntityName": "employer",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Employer",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "legacyCaseNumber",
+            "fieldType": "String",
+            "fieldNameCapitalized": "LegacyCaseNumber",
+            "fieldNameUnderscored": "legacy_case_number",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150327212440",
+    "pagination": "pagination",
+    "validation": true
+}

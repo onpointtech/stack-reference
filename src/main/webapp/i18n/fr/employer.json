@@ -1,0 +1,22 @@
+{
+    "aquilaApp": {
+        "employer" : {
+            "home": {
+                "title": "Employers",
+                "createLabel": "Créer un nouveau Employer",
+                "createOrEditLabel": "Créer ou éditer un Employer"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Employer {{ id }} ?"
+            },
+            "detail": {
+                "title": "Employer"
+            },
+            "name": "Name",
+            "address": "Address",
+            "contactName": "ContactName",
+            "contactPhone": "ContactPhone"
+        }
+    }
+}
+
